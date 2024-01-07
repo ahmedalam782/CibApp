@@ -24,6 +24,7 @@ class Cib extends StatelessWidget {
       child: BlocConsumer<CibCubit, CibState>(
         builder: (context, state) {
           return MaterialApp(
+            debugShowCheckedModeBanner: false,
             routes: {
               LoginScreen.routeName: (context) => LoginScreen(),
               HomeScreen.routeName: (context) => HomeScreen(),
